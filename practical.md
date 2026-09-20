@@ -77,8 +77,8 @@ and an umbrella are both sensible.
 ### By air
 
 The nearest airport is **Trieste Airport (TRS)**, at Ronchi dei Legionari, which
-has its own railway station: trains reach Udine in about 35-45 minutes. Other
-options, roughly in order of convenience:
+has its own railway station: trains and buses reach Udine in about 35-45
+minutes. Other options, roughly in order of convenience:
 
 | Airport | Distance | Connection to Udine |
 | --- | --- | --- |
