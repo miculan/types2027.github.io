@@ -1,0 +1,15 @@
+<table class="dates">
+  <caption class="visually-hidden">Important dates for TYPES 2027</caption>
+  <thead>
+    <tr><th scope="col">Event</th><th scope="col">Date</th></tr>
+  </thead>
+  <tbody>
+    {%- for d in site.data.dates -%}
+    <tr{% if d.highlight %} class="is-highlight"{% endif %}>
+      <th scope="row">{{ d.event }}</th>
+      <td><time datetime="{{ d.iso }}">{{ d.human }}</time></td>
+    </tr>
+    {%- endfor -%}
+  </tbody>
+</table>
+<p class="dates__note">All deadlines are anywhere on Earth (AoE).</p>

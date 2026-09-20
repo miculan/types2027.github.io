@@ -1,0 +1,149 @@
+# Editions of the TYPES conference series, most recent first.
+#
+# The series has 32 editions up to and including 2026, which makes Udine the
+# 33rd. It did not meet every year: there was no meeting in 1997, 2001, 2005,
+# 2012 or 2020. (A 2020 edition was planned in Torino and has a website, but it
+# did not take place, which is why the edition numbers skip it.)
+#
+# Fields:
+#   year, city            required
+#   country               omitted for the online edition
+#   note                  shown in brackets after the year
+#   url                   the edition's website; entries without one are plain text
+#   archived: true        the original site is gone and the url is an Internet
+#                         Archive snapshot
+#
+# All links below were checked in September 2026. Editions from 1990 to 1996 and
+# 2000 have no website on record.
+
+- year: 2026
+  city: Gothenburg
+  country: Sweden
+  url: https://types2026.cse.chalmers.se/
+- year: 2025
+  city: Glasgow
+  country: United Kingdom
+  url: https://msp.cis.strath.ac.uk/types2025/
+- year: 2024
+  city: Copenhagen
+  country: Denmark
+  url: https://types2024.itu.dk/
+- year: 2023
+  city: Valencia
+  country: Spain
+  url: https://types2023.webs.upv.es/
+- year: 2022
+  city: Nantes
+  country: France
+  url: https://types22.inria.fr/
+- year: 2021
+  city: Leiden
+  country: Netherlands
+  note: online
+  url: https://web.archive.org/web/20260209154602/https://types21.liacs.nl/
+  archived: true
+- year: 2019
+  city: Oslo
+  country: Norway
+  url: https://sites.google.com/view/types-2019
+- year: 2018
+  city: Braga
+  country: Portugal
+  url: https://types2018.projj.eu/
+- year: 2017
+  city: Budapest
+  country: Hungary
+  url: https://types2017.elte.hu/
+- year: 2016
+  city: Novi Sad
+  country: Serbia
+  url: http://www.types2016.uns.ac.rs/
+- year: 2015
+  city: Tallinn
+  country: Estonia
+  url: https://cs.ioc.ee/types15/
+- year: 2014
+  city: Paris
+  country: France
+  url: https://www.irif.fr/~letouzey/types2014/
+- year: 2013
+  city: Toulouse
+  country: France
+  url: https://www.irit.fr/TYPES2013/
+- year: 2011
+  city: Bergen
+  country: Norway
+  url: https://sites.google.com/view/types-2011
+- year: 2010
+  city: Warsaw
+  country: Poland
+  url: https://web.archive.org/web/20190128034952/http://types10.mimuw.edu.pl/
+  archived: true
+- year: 2009
+  city: Aussois
+  country: France
+  url: https://web.archive.org/web/20170602235623/http://www.lama.univ-savoie.fr/~types09/
+  archived: true
+- year: 2008
+  city: Torino
+  country: Italy
+  url: https://types2008.di.unito.it/
+- year: 2007
+  city: Cividale del Friuli
+  country: Italy
+  url: https://web.archive.org/web/20120316144503/http://sole.dimi.uniud.it/types07/
+  archived: true
+- year: 2006
+  city: Nottingham
+  country: United Kingdom
+  url: https://web.archive.org/web/20240723013841/http://www.cs.nott.ac.uk/types06/
+  archived: true
+- year: 2004
+  city: Jouy-en-Josas
+  country: France
+  note: near Paris
+  url: https://web.archive.org/web/20220623200240/http://types2004.lri.fr/
+  archived: true
+- year: 2003
+  city: Torino
+  country: Italy
+  url: https://types2003.di.unito.it/
+- year: 2002
+  city: Berg en Dal
+  country: Netherlands
+  note: near Nijmegen
+  url: https://web.archive.org/web/20120320075942/http://www.fnds.cs.ru.nl/TYPES2002/
+  archived: true
+- year: 2000
+  city: Durham
+  country: United Kingdom
+- year: 1999
+  city: Lökeberg
+  country: Sweden
+  url: https://www.cse.chalmers.se/research/group/logic/TypesWG/lokeberg.html
+- year: 1998
+  city: Kloster Irsee
+  country: Germany
+  url: https://web.archive.org/web/20170602174354/http://www2.tcs.ifi.lmu.de/~types98/types.html
+  archived: true
+- year: 1996
+  city: Aussois
+  country: France
+- year: 1995
+  city: Torino
+  country: Italy
+- year: 1994
+  city: Båstad
+  country: Sweden
+- year: 1993
+  city: Nijmegen
+  country: Netherlands
+- year: 1992
+  city: Båstad
+  country: Sweden
+- year: 1991
+  city: Edinburgh
+  country: United Kingdom
+- year: 1990
+  city: Antibes
+  country: France

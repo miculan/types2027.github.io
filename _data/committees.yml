@@ -1,0 +1,33 @@
+# Fill in as soon as the committees are settled.
+# Each entry: name, affiliation (optional: url, role).
+organising:
+  title: Organising Committee
+  note: The rest of the organising committee will be announced.
+  members:
+    - name: Marino Miculan
+      affiliation: University of Udine
+      role: conference chair
+
+programme:
+  title: Programme Committee
+  members: []
+
+steering:
+  title: TYPES Steering Committee
+  note: >-
+    TYPES 2027 is organised under the auspices of the TYPES steering committee.
+  members:
+    - name: Malin Altenmüller
+      affiliation: University of Edinburgh, Scotland
+    - name: Tom de Jong
+      affiliation: University of Nottingham, England
+      role: secretary
+    - name: Meven Lennon-Bertrand
+      affiliation: INRIA, France
+    - name: Marino Miculan
+      affiliation: University of Udine, Italy
+    - name: Fredrik Nordvall Forsberg
+      affiliation: University of Strathclyde, Scotland
+      role: chair
+    - name: Christian Sattler
+      affiliation: Chalmers University of Technology, Sweden

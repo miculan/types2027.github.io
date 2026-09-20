@@ -1,0 +1,25 @@
+- id: abstract
+  event: Abstract submission deadline
+  human: 19 February 2027
+  iso: 2027-02-19
+- id: notification
+  event: Author notification
+  human: 22 March 2027
+  iso: 2027-03-22
+- id: early-registration
+  event: Early registration deadline
+  human: 12 April 2027
+  iso: 2027-04-12
+- id: camera-ready
+  event: Camera-ready version deadline
+  human: 30 April 2027
+  iso: 2027-04-30
+- id: late-registration
+  event: Late registration deadline
+  human: 17 May 2027
+  iso: 2027-05-17
+- id: conference
+  event: TYPES 2027 conference
+  human: 7-11 June 2027
+  iso: 2027-06-07
+  highlight: true

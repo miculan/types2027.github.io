@@ -1,4 +1,52 @@
+# --- Site identity -----------------------------------------------------------
 title: TYPES 2027
-description: 31st International Conference on Types for Proofs and Programs
-theme: minima
+tagline: 33rd International Conference on Types for Proofs and Programs
+description: >-
+  TYPES 2027, the 33rd International Conference on Types for Proofs and
+  Programs, will be held in Udine, Italy, on 7-11 June 2027.
+
+# If the repository moves to the "types2027" GitHub organisation the site is
+# served from https://types2027.github.io and baseurl must stay empty.
+# If it stays under a personal account, set:
+#   baseurl: "/types2027.github.io"
+url: "https://types2027.github.io"
+baseurl: ""
+
+# --- Conference facts (used throughout the templates) ------------------------
+conference:
+  acronym: TYPES 2027
+  edition: 33rd
+  full_name: International Conference on Types for Proofs and Programs
+  city: Udine
+  country: Italy
+  host: Università degli Studi di Udine
+  dates: 7-11 June 2027
+  start_date: 2027-06-07
+  end_date: 2027-06-11
+  email: types2027@uniud.it
+  chair:
+    name: Marino Miculan
+    email: marino.miculan@uniud.it
+    affiliation: University of Udine
+
+# --- Build -------------------------------------------------------------------
 markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+permalink: pretty
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - vendor
+  - .jekyll-cache

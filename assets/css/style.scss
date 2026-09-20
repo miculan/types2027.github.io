@@ -1,0 +1,398 @@
+---
+# Front matter tells Jekyll to process this file with Sass.
+---
+
+/* =========================================================================
+   TYPES 2027 — palette taken from the conference banner
+   ========================================================================= */
+:root {
+  --ink:        #241d4c;   /* deep indigo band of the banner */
+  --ink-deep:   #16123a;
+  --amber:      #f5b53c;   /* the "2027" */
+  --amber-dark: #d99516;
+  --teal:       #2e9d9a;
+  --coral:      #e8734a;
+  --mint:       #e6f1e6;
+  --paper:      #fdfcf9;
+  --paper-alt:  #f4f2ec;
+  --text:       #1f2430;
+  --muted:      #5a6172;
+  --line:       #ddd9cd;
+
+  --wrap: 72rem;
+  --radius: 10px;
+  --shadow: 0 1px 2px rgba(36, 29, 76, .06), 0 8px 24px rgba(36, 29, 76, .07);
+
+  --font-display: "Outfit", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-body: "Source Sans 3", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+
+.wrap {
+  width: 100%;
+  max-width: var(--wrap);
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+img { max-width: 100%; height: auto; }
+
+a {
+  color: #1d6d6a;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+a:hover { color: var(--coral); }
+
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px;
+  margin: -1px; padding: 0; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+
+.skip-link {
+  position: absolute; left: -999px; top: 0; z-index: 100;
+  background: var(--amber); color: var(--ink-deep);
+  padding: .6rem 1rem; font-weight: 600;
+}
+.skip-link:focus { left: 0; }
+
+:focus-visible {
+  outline: 3px solid var(--amber);
+  outline-offset: 2px;
+}
+
+/* ============================ Header & nav ============================== */
+.site-header {
+  background: var(--ink);
+  color: #fff;
+}
+
+.site-header__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: .9rem;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  text-decoration: none;
+  line-height: 1.15;
+}
+.brand__name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: .01em;
+}
+.brand__meta {
+  font-size: .8125rem;
+  color: #c9c4e4;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.brand:hover .brand__name { color: var(--amber); }
+
+.nav-toggle {
+  display: none;
+  align-items: center;
+  gap: .5rem;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, .35);
+  border-radius: var(--radius);
+  color: #fff;
+  font: 600 .875rem/1 var(--font-body);
+  padding: .55rem .75rem;
+  cursor: pointer;
+}
+.nav-toggle__bars,
+.nav-toggle__bars::before,
+.nav-toggle__bars::after {
+  display: block; width: 18px; height: 2px;
+  background: currentColor; content: "";
+}
+.nav-toggle__bars { position: relative; }
+.nav-toggle__bars::before { position: absolute; top: -6px; }
+.nav-toggle__bars::after  { position: absolute; top: 6px; }
+
+.site-nav {
+  background: var(--ink-deep);
+}
+.site-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0 1.1rem;
+  list-style: none;
+  margin-block: 0;          /* keep .wrap's margin-inline: auto */
+  padding-block: .35rem;
+}
+.site-nav__list a {
+  display: block;
+  padding: .5rem 0;
+  color: #d7d3ee;
+  font-size: .8125rem;
+  font-weight: 600;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+.site-nav__list a:hover { color: #fff; border-bottom-color: var(--teal); }
+.site-nav__list a.is-current { color: var(--amber); border-bottom-color: var(--amber); }
+
+/* ================================ Hero ================================== */
+.hero {
+  background: var(--ink);
+  display: flex;
+  justify-content: center;
+}
+.hero__image {
+  display: block;
+  width: 100%;
+  max-width: 1280px;
+}
+
+/* ============================ Page banner =============================== */
+.page-banner {
+  background: linear-gradient(115deg, var(--ink) 0%, #3a2f6b 55%, var(--teal) 160%);
+  color: #fff;
+  padding-block: 2.5rem 2.25rem;
+  border-bottom: 4px solid var(--amber);
+}
+.page-banner h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.9rem, 1.3rem + 2.2vw, 2.75rem);
+  line-height: 1.15;
+  margin: 0;
+}
+.page-banner__subtitle {
+  margin: .5rem 0 0;
+  color: #d7d3ee;
+  font-size: 1.05rem;
+  /* Wide enough to keep every current subtitle on one line: the longest runs
+     to 72 characters. It still wraps on narrow screens, as it should. */
+  max-width: 80ch;
+}
+
+/* =============================== Prose ================================== */
+.prose {
+  padding-block: 2.5rem 4rem;
+}
+.prose > * { max-width: 46rem; }
+.prose > .full { max-width: none; }
+
+.prose h2 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.25;
+  margin: 2.5rem 0 .75rem;
+  padding-bottom: .35rem;
+  border-bottom: 2px solid var(--line);
+}
+.prose h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin: 2rem 0 .5rem;
+}
+.prose p, .prose ul, .prose ol { margin-block: 0 1.1rem; }
+.prose li { margin-block: .3rem; }
+.prose ul.plain { list-style: none; padding-left: 0; }
+
+.prose blockquote {
+  margin: 1.5rem 0;
+  padding: .25rem 0 .25rem 1.25rem;
+  border-left: 4px solid var(--teal);
+  color: var(--muted);
+}
+
+.home-prose .lead {
+  font-size: 1.2rem;
+  line-height: 1.55;
+  color: var(--muted);
+}
+.home-prose .lead strong { color: var(--text); }
+
+/* =============================== Tables ================================= */
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-block: 1.25rem 1.5rem;
+  font-size: .98rem;
+}
+.prose th, .prose td {
+  text-align: left;
+  padding: .65rem .75rem;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+.prose thead th {
+  background: var(--paper-alt);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: .8125rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border-bottom: 2px solid var(--line);
+}
+.prose tbody th { font-weight: 600; }
+
+.dates tbody tr.is-highlight {
+  background: var(--mint);
+}
+.dates tbody tr.is-highlight th,
+.dates tbody tr.is-highlight td {
+  font-weight: 700;
+  color: var(--ink);
+}
+.dates__note,
+.note {
+  font-size: .9rem;
+  color: var(--muted);
+}
+
+/* ============================== Callouts ================================ */
+.callout {
+  background: var(--paper-alt);
+  border-left: 4px solid var(--amber);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 1rem 1.25rem;
+  margin-block: 1.5rem;
+}
+.callout > :last-child { margin-bottom: 0; }
+.callout--tba {
+  border-left-color: var(--coral);
+}
+
+.tba {
+  display: inline-block;
+  background: var(--coral);
+  color: #fff;
+  font-family: var(--font-display);
+  font-size: .7rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  padding: .15rem .5rem;
+  border-radius: 999px;
+  vertical-align: middle;
+}
+
+/* ============================== Buttons ================================= */
+.btn {
+  display: inline-block;
+  background: var(--ink);
+  color: #fff;
+  font-family: var(--font-display);
+  font-weight: 600;
+  text-decoration: none;
+  padding: .7rem 1.25rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.btn:hover { background: var(--ink-deep); color: var(--amber); }
+.btn--amber { background: var(--amber); color: var(--ink-deep); }
+.btn--amber:hover { background: var(--amber-dark); color: var(--ink-deep); }
+
+/* ============================== Card grid =============================== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.25rem;
+  list-style: none;
+  padding: 0;
+  margin-block: 1.5rem 2rem;
+  max-width: none;
+}
+.cards li {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--teal);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.25rem;
+  box-shadow: var(--shadow);
+  margin: 0;
+}
+.cards h3 {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  margin: 0 0 .35rem;
+}
+.cards p { margin: 0; color: var(--muted); font-size: .95rem; }
+.cards a { font-weight: 600; }
+
+/* ============================== Footer ================================== */
+.site-footer {
+  background: var(--ink-deep);
+  color: #cdc9e6;
+  margin-top: 3rem;
+  padding-block: 2.5rem 1.5rem;
+  font-size: .95rem;
+}
+.site-footer a { color: var(--amber); }
+.site-footer a:hover { color: #fff; }
+.site-footer__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1.75rem;
+}
+.site-footer p { margin: 0 0 .5rem; }
+.site-footer ul.plain { list-style: none; margin: 0; padding: 0; }
+.site-footer__title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  font-size: .8125rem;
+}
+.site-footer__legal {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, .12);
+  font-size: .85rem;
+  color: #9d98c0;
+}
+
+/* ============================ Small screens ============================= */
+@media (max-width: 46rem) {
+  .nav-toggle { display: inline-flex; }
+  .site-nav {
+    display: none;
+  }
+  .site-nav.is-open { display: block; }
+  .site-nav__list {
+    flex-direction: column;
+    gap: 0;
+    padding-block: .5rem 1rem;
+  }
+  .site-nav__list li + li { border-top: 1px solid rgba(255, 255, 255, .08); }
+  .site-nav__list a { padding: .7rem 0; }
+}
+
+/* ================================ Print ================================= */
+@media print {
+  .site-header, .site-footer, .skip-link, .nav-toggle { display: none; }
+  body { background: #fff; font-size: 11pt; }
+  .prose > * { max-width: none; }
+}

@@ -1,0 +1,26 @@
+<footer class="site-footer">
+  <div class="wrap site-footer__grid">
+    <div>
+      <p class="site-footer__title">TYPES 2027</p>
+      <p>{{ site.conference.edition }} {{ site.conference.full_name }}<br>
+         {{ site.conference.city }}, {{ site.conference.country }} &middot; {{ site.conference.dates }}</p>
+      <p>Hosted by {{ site.conference.host }}</p>
+    </div>
+    <div>
+      <p class="site-footer__title">Contact</p>
+      <p><a href="mailto:{{ site.conference.email }}">{{ site.conference.email }}</a></p>
+      <p><a href="{{ '/contact/' | relative_url }}">Contact page</a></p>
+    </div>
+    <div>
+      <p class="site-footer__title">Previous editions</p>
+      <ul class="plain">
+        {%- for e in site.data.editions limit: 3 -%}
+        <li>{% if e.url %}<a href="{{ e.url }}">TYPES {{ e.year }}</a>{% else %}TYPES {{ e.year }}{% endif %}, {{ e.city }}</li>
+        {%- endfor -%}
+      </ul>
+    </div>
+  </div>
+  <div class="wrap site-footer__legal">
+    <p>&copy; {{ 'now' | date: "%Y" }} TYPES 2027. Built with Jekyll.</p>
+  </div>
+</footer>
