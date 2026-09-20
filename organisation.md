@@ -20,7 +20,8 @@ conference series.
 <ul class="plain">
   {% for m in g.members %}
   <li>
-    {% if m.url %}<a href="{{ m.url }}">{{ m.name }}</a>{% else %}{{ m.name }}{% endif %}
+    {% capture who %}{{ m.first }} {{ m.last }}{% endcapture -%}
+    {% if m.homepage %}<a href="{{ m.homepage }}">{{ who }}</a>{% else %}{{ who }}{% endif %}
     {% if m.affiliation %}<span class="note">({{ m.affiliation }})</span>{% endif %}
     {% if m.role %} — {{ m.role }}{% endif %}
   </li>
