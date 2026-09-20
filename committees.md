@@ -14,8 +14,6 @@ Contact: <a href="mailto:{{ site.conference.email }}">{{ site.conference.email }
 
 {% include people.html group="organizing-committee" %}
 
-The rest of the organising committee will be announced.
-
 ## Programme Committee
 
 {% include people.html group="program-committee" %}
