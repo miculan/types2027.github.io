@@ -5,11 +5,18 @@ description: >-
   TYPES 2027, the 33rd International Conference on Types for Proofs and
   Programs, will be held in Udine, Italy, on 7-11 June 2027.
 
-# If the repository moves to the "types2027" GitHub organisation the site is
-# served from https://types2027.github.io and baseurl must stay empty.
-# If it stays under a personal account, set:
-#   baseurl: "/types2027.github.io"
-url: "https://types2027.github.io"
+# Temporary address. The repository sits under a personal account whose user
+# site carries the custom domain marino.miculan.org, and GitHub applies that
+# domain to its project pages too, so the site is served from
+# https://marino.miculan.org/types2027.github.io/.
+#
+# When it moves — to a `types2027` organisation (https://types2027.github.io)
+# or to a custom domain such as https://types2027.uniud.it — this is the line
+# to change.
+#
+# `baseurl` stays empty so that local builds work at http://localhost:4000/;
+# the deploy workflow passes the right one to `jekyll build` at build time.
+url: "https://marino.miculan.org"
 baseurl: ""
 
 # --- Conference facts (used throughout the templates) ------------------------
