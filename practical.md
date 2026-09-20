@@ -77,12 +77,14 @@ and an umbrella are both sensible.
 ### By air
 
 The nearest airport is **Trieste Airport (TRS)**, at Ronchi dei Legionari, which
-has its own railway station: trains and buses reach Udine in about 35-45
-minutes. Other options, roughly in order of convenience:
+has its own railway station: trains reach Udine in about 35 minutes. APT bus
+line G51 runs to Udine as well, taking 40 minutes when it goes non-stop on the
+motorway and about an hour otherwise. Other options, roughly in order of
+convenience:
 
 | Airport | Distance | Connection to Udine |
 | --- | --- | --- |
-| Trieste (TRS) | 45 km | Train from the airport station, 35-45 min |
+| Trieste (TRS) | 45 km | Train from the airport station, about 35 min; or APT bus G51, 40-60 min |
 | Venice Marco Polo (VCE) | 130 km | Bus or taxi to Mestre, then train, about 2 h 30 |
 | Venice Treviso (TSF) | 120 km | Bus to Treviso or Mestre, then train, about 2 h 30 |
 | Ljubljana (LJU) | 150 km | Bus or car, about 2 h 30 |
