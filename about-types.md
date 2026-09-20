@@ -32,7 +32,7 @@ The series has met thirty-two times, which makes Udine the thirty-third edition.
 <p class="note">Where an edition's own website has gone, the link points to an
 Internet Archive snapshot. The meetings from 1990 to 1996, and the one in
 Durham in 2000, have no website on record — if you know of one, please
-<a href="{{ '/contact/' | relative_url }}">tell us</a>.</p>
+<a href="{{ '/practical/#contact' | relative_url }}">tell us</a>.</p>
 
 ## TYPES in Friuli
 
@@ -40,4 +40,4 @@ This is not the first time the series comes to this corner of Italy. The 2007
 edition was held in **Cividale del Friuli**, close to Udine. Torino has hosted the meeting three times, in 1995, 2003 and 2008.
 
 Cividale is worth the short trip during the conference week too — see the
-[venue page]({{ '/venue/' | relative_url }}).
+[practical information]({{ '/practical/#venue' | relative_url }}).

@@ -20,7 +20,7 @@ everybody working on or interested in type theory, whether or not they present a
 contribution.
 
 <p><a class="btn btn--amber" href="{{ '/call-for-contributions/' | relative_url }}">Call for contributions</a>
-<a class="btn" href="{{ '/submission/' | relative_url }}">How to submit</a></p>
+<a class="btn" href="{{ '/call-for-contributions/#submission' | relative_url }}">How to submit</a></p>
 
 ## Important dates
 
@@ -43,7 +43,7 @@ contribution.
     <h3>Where</h3>
     <p>Udine, in Friuli-Venezia Giulia, north-east Italy — a compact city
     between the Alps and the Adriatic, an hour from Trieste and ninety minutes
-    from Venice. <a href="{{ '/venue/' | relative_url }}">Venue and travel</a></p>
+    from Venice. <a href="{{ '/practical/' | relative_url }}">Practical information</a></p>
   </li>
 </ul>
 

@@ -1,0 +1,22 @@
+{%- comment -%}
+Renders one of the committee files in data/, which use the JSON shape of the
+TYPES tooling: {first, last, affiliation, role?, homepage?}.
+Usage: {% include people.html group="steering-committee" %}
+{%- endcomment -%}
+{%- assign people = site.data[include.group] -%}
+{%- if people and people.size > 0 -%}
+<ul class="plain">
+  {%- for p in people %}
+  <li>
+    {%- capture who %}{{ p.first }} {{ p.last }}{% endcapture -%}
+    {% if p.homepage %}<a href="{{ p.homepage }}">{{ who }}</a>{% else %}{{ who }}{% endif %}
+    {%- if p.affiliation %} <span class="note">({{ p.affiliation }})</span>{% endif %}
+    {%- if p.role %} &mdash; {{ p.role }}{% endif %}
+  </li>
+  {%- endfor %}
+</ul>
+{%- else -%}
+<div class="callout callout--tba">
+  <p><span class="tba">to be announced</span></p>
+</div>
+{%- endif -%}

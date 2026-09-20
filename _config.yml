@@ -29,6 +29,13 @@ conference:
     email: marino.miculan@uniud.it
     affiliation: University of Udine
 
+# --- Data --------------------------------------------------------------------
+# The data lives in `data/` rather than `_data/` so that the TYPES tooling
+# (https://github.com/sattlerc/types-website) can read the same files from the
+# path it expects. It must stay excluded from the output: program-committee.json
+# carries reviewer email addresses.
+data_dir: data
+
 # --- Build -------------------------------------------------------------------
 markdown: kramdown
 kramdown:
@@ -44,6 +51,7 @@ plugins:
   - jekyll-sitemap
 
 exclude:
+  - data
   - Gemfile
   - Gemfile.lock
   - LICENSE

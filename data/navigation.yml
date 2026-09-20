@@ -1,0 +1,26 @@
+# The menu, in order. Add the commented-out entries as those pages fill up;
+# the pages already exist and are reachable by URL in the meantime.
+- title: Home
+  url: /
+- title: About TYPES
+  url: /about-types/
+- title: Call for contributions
+  url: /call-for-contributions/
+- title: Programme
+  url: /programme/
+- title: Registration
+  url: /registration/
+- title: Practical information
+  url: /practical/
+- title: Committees
+  url: /committees/
+
+# Waiting for content — add after the author notification of 22 March 2027:
+# - title: Invited speakers
+#   url: /invited-speakers/
+# - title: Accepted talks
+#   url: /accepted/
+# - title: Social events
+#   url: /social/
+# - title: Book of abstracts
+#   url: /book-of-abstracts/

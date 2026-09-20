@@ -1,0 +1,14 @@
+[
+  { "first": "Malin", "last": "Altenmüller",
+    "affiliation": "University of Edinburgh, Scotland" },
+  { "first": "Tom", "last": "de Jong",
+    "affiliation": "University of Nottingham, England", "role": "secretary" },
+  { "first": "Meven", "last": "Lennon-Bertrand",
+    "affiliation": "INRIA, France" },
+  { "first": "Marino", "last": "Miculan",
+    "affiliation": "University of Udine, Italy" },
+  { "first": "Fredrik", "last": "Nordvall Forsberg",
+    "affiliation": "University of Strathclyde, Scotland", "role": "chair" },
+  { "first": "Christian", "last": "Sattler",
+    "affiliation": "Chalmers University of Technology, Sweden" }
+]
