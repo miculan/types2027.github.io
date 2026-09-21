@@ -171,11 +171,6 @@ For anything concerning TYPES 2027 — submissions, registration, visa letters,
 accessibility, or local arrangements — write to
 <a href="mailto:{{ site.conference.email }}">{{ site.conference.email }}</a>.
 
-<div class="callout">
-  <p>That address is being activated and should be live within a few days.
-  Until then, write to the conference chair.</p>
-</div>
-
 ### Conference chair
 
 <p><strong>{{ site.conference.chair.name }}</strong><br>
