@@ -5,14 +5,13 @@ description: >-
   TYPES 2027, the 33rd International Conference on Types for Proofs and
   Programs, will be held in Udine, Italy, on 7-11 June 2027.
 
-# The repository is the GitHub Pages site of the `types2027` organisation, so it
-# is served from the root of https://types2027.github.io and `baseurl` stays
-# empty — for an organisation site the deploy workflow gets an empty base path
-# from GitHub, and local builds match production.
+# Served from the custom domain types2027.uniud.it, declared both in the CNAME
+# file at the root of the repository (so that it survives deploys made through
+# GitHub Actions) and in the repository's Pages settings. GitHub redirects
+# https://types2027.github.io here.
 #
-# If a custom domain is added later (say https://types2027.uniud.it), this is
-# the line to change.
-url: "https://types2027.github.io"
+# `baseurl` stays empty: the site is served from the root of the domain.
+url: "https://types2027.uniud.it"
 baseurl: ""
 
 # --- Conference facts (used throughout the templates) ------------------------
