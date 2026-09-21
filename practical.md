@@ -120,6 +120,13 @@ Udine is small enough to cross on foot. City buses are run by
 regional trains across Friuli-Venezia Giulia, which is useful for excursions to
 Cividale, Aquileia or the coast.
 
+{% comment %}
+  TODO: link the timetable of APT bus line G51 (airport to Udine) here and from
+  the "By air" section above, once the summer 2027 timetable is published.
+  APT Gorizia reissues the PDF each season and the old URL stops working, so
+  wait for the 2027 one rather than linking a seasonal file that will 404.
+{% endcomment %}
+
 <div class="callout">
   <p>Detailed directions from the station and the airport to the conference
   venue, with maps, will be added once the venue is confirmed.
@@ -189,8 +196,3 @@ If you have accessibility requirements, dietary needs or any other request that
 would help you take part, tell us as early as you can and we will do our best to
 accommodate it.
 
-### Website
-
-This site is built with [Jekyll](https://jekyllrb.com/) and its source is on
-GitHub. Corrections and additions are welcome: open an issue or send us an
-email.
