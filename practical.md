@@ -171,15 +171,9 @@ For anything concerning TYPES 2027 — submissions, registration, visa letters,
 accessibility, or local arrangements — write to
 <a href="mailto:{{ site.conference.email }}">{{ site.conference.email }}</a>.
 
-### Conference chair
-
-<p><strong>{{ site.conference.chair.name }}</strong><br>
-{{ site.conference.chair.affiliation }}<br>
-<a href="mailto:{{ site.conference.chair.email }}">{{ site.conference.chair.email }}</a></p>
-
 ### Post
 
-{{ site.conference.chair.name }}<br>
+TYPES 2027<br>
 Department of Mathematics, Computer Science and Physics<br>
 University of Udine<br>
 Via delle Scienze 206<br>

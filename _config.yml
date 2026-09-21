@@ -27,10 +27,6 @@ conference:
   start_date: 2027-06-07
   end_date: 2027-06-11
   email: types2027@uniud.it
-  chair:
-    name: Marino Miculan
-    email: marino.miculan@uniud.it
-    affiliation: University of Udine
 
 # --- Data --------------------------------------------------------------------
 # The data lives in `data/` rather than `_data/` so that the TYPES tooling
