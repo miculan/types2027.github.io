@@ -8,5 +8,12 @@
   <link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
   {%- feed_meta -%}
   {%- seo -%}
+  {%- comment -%}
+    Analytics: self-hosted Umami, no cookies. Production builds only, so that
+    `jekyll serve` and local builds do not count as visits. The deploy workflow
+    sets JEKYLL_ENV=production.
+  {%- endcomment -%}
+  {%- if jekyll.environment == "production" %}
   <script defer src="https://glance.paier.xyz/script.js" data-website-id="8550a017-8695-47da-b581-c1fbfdf5fce9"></script>
+  {%- endif %}
 </head>
