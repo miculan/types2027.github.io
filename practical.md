@@ -9,8 +9,7 @@ subtitle: Venue, travel, accommodation and how to reach us.
 ### The host
 
 TYPES 2027 is hosted by the **University of Udine** (Università degli Studi di
-Udine), founded in 1978 as part of the reconstruction of Friuli after the 1976
-earthquake, and in particular by its Department of Mathematics, Computer Science
+Udine), and in particular by its Department of Mathematics, Computer Science
 and Physics.
 
 <div class="callout callout--tba">
