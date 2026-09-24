@@ -11,9 +11,9 @@ description: >-
 Types for Proofs and Programs, will be held in <strong>Udine, Italy</strong>,
 from <strong>7 to 11 June 2027</strong>, hosted by the University of Udine.</p>
 
-The TYPES meetings are a forum to present new and ongoing work in all aspects of
-type theory and its applications, especially in formalised and computer assisted
-reasoning and computer programming. The meetings from 1990 to 2008 were annual
+[The TYPES meetings](https://sites.google.com/view/thetypesconferences) are a forum to present new and ongoing work in all
+aspects of type theory and its applications, especially in formalised and
+computer assisted reasoning and computer programming. The meetings from 1990 to 2008 were annual
 workshops of a sequence of five EU-funded networking projects. Since 2009, TYPES
 has been run as an independent conference series. Participation is open to
 everybody working on or interested in type theory, whether or not they present a
