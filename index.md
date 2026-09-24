@@ -68,3 +68,7 @@ applications, including but not limited to:
 Announcements are circulated on the usual community mailing lists and will be
 collected on this website. For any question, write to
 <a href="mailto:{{ site.conference.email }}">{{ site.conference.email }}</a>.
+
+## Sponsors
+
+{% include sponsors.html %}

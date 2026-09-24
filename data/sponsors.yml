@@ -1,0 +1,21 @@
+# Sponsors of TYPES 2027, by tier, following the tiers used by recent editions.
+#
+# A tier with no sponsors is not shown; when every tier is empty the home page
+# shows a "to be announced" placeholder instead. So adding the first sponsor is
+# just filling in a list here — no template to touch.
+#
+# Each entry: name, and optionally url and logo. The logo is a path under
+# assets/img/sponsors/; without one, the name is shown as text.
+#
+# - tier: Gold
+#   sponsors:
+#     - name: Example Foundation
+#       url: https://example.org/
+#       logo: /assets/img/sponsors/example.svg
+
+- tier: Gold
+  sponsors: []
+- tier: Silver
+  sponsors: []
+- tier: Bronze
+  sponsors: []
